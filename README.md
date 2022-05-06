@@ -19,4 +19,4 @@
 - to run project type "npm run dev"
 
 ## Link
-[Visit Website](https://www.natluk.xyz/)
+[Natluk.xyz](https://www.natluk.xyz/)
