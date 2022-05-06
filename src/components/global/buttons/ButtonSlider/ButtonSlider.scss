@@ -1,0 +1,50 @@
+@use "src/scss/config" as *;
+
+.button-slider {
+    height: 100%;
+    width: max(10vw, 10rem);
+
+    display: flex;
+    align-items: center;
+    &__button {
+        height: 100%;
+        width: fit-content;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            filter: drop-shadow(0 0 0.5rem rgba($gray-20, 0.25));
+            transform: scale(1.05);
+        }
+    }
+    &__icon {
+        font-size: 6rem;
+        color: $white;
+    }
+
+    &--left {
+        left: 0;
+        background-image: linear-gradient(90deg, $black-90, rgba($gray-90, 0.8) 40%, rgba($gray-20 ,0));
+        .button-slider__button {
+            padding: 0 40% 0 15%;
+            margin-right: auto;
+        }
+        
+    }
+    &--right {
+        right: 0;
+        background-image: linear-gradient(90deg, rgba($gray-20 ,0), rgba($gray-90, 0.8) 40%, $black-90);
+        .button-slider__button {
+            padding: 0 15% 0 40%;
+            margin-left: auto;
+        }
+        .button-slider__icon {
+            transform: rotateZ(180deg);
+        }
+        
+    }
+    
+}

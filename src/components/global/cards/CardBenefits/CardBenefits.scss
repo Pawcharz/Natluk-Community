@@ -1,0 +1,25 @@
+@use "src/scss/config" as *;
+
+.card-benefits {
+    padding: 2.5rem;
+    padding-bottom: 3.5rem;
+
+    &__title {
+        display: flex;
+        gap: 1.6rem;
+        
+        .icon {
+            font-size: 4rem;
+        }
+    }
+
+    &--sm {
+        width: min(100%, 40rem);
+    }
+    &--md {
+        width: min(100%, 50rem);
+    }
+    &--lg {
+        width: min(100%, 60rem);
+    }
+}

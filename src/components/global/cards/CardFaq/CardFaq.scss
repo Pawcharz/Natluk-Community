@@ -1,0 +1,32 @@
+@use "src/scss/config" as *;
+
+.card-faq {
+    height: fit-content;
+    width: 100%;
+    padding: 1rem 0;
+
+    border-bottom: 2px solid $white;
+
+    display: flex;
+    gap: 1.5rem;
+    &__arrow {
+        font-size: 2em;
+        margin-top: 0.5rem;
+    }
+    &__question {
+        cursor: pointer;
+    }
+    &__pointer {
+        margin-left: auto;
+        align-self: center;
+
+        transition: all 0.2s ease-in-out;
+        font-size: 3em;
+        opacity: 0;
+    }
+    &.active {
+        .card-faq__pointer {
+            opacity: 1;
+        }
+    }
+}

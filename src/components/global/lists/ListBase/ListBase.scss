@@ -1,0 +1,17 @@
+@use "src/scss/config" as *;
+
+.list {
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    &__item {
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+        &__arrow {
+            font-size: 2em;
+            margin-top: 0.3rem;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@use "src/scss/config" as *;
+
+.input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.8em;
+
+    background-color: $white;
+    border: $border-form;
+
+    color: $black-90;
+    font-family: $font-default;
+    &:focus {
+        outline: none;
+        background-color: $white;
+    }
+}

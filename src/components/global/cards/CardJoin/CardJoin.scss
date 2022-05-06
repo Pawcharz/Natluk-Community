@@ -1,0 +1,53 @@
+@use "src/scss/config" as *;
+
+.card-join {
+    height: fit-content;
+    width: fit-content;
+
+    align-items: center;
+    gap: calc(2rem + 2vw);
+    &__top {
+        width: 100%;
+        padding: 3rem 4rem;
+
+        background-color: $blue-80;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .title {
+            text-align: center;
+            font-weight: 800;
+        }
+    }
+    &__price-container {
+        width: 100%;
+        padding: 0 4rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .prev-price {
+            text-decoration: line-through;
+            text-decoration-thickness: 2px;
+        }
+        .price {
+            font-weight: 600;
+        }
+    }
+    &__list {
+        width: 100%;
+        padding: 0 4rem;
+
+        gap: 1.6rem;
+    }
+    &__button {
+        padding: 1.2em 3.6em;
+        margin-bottom: 3rem;
+    }
+
+    transition: all 0.1s ease-in-out;
+    &.hidden {
+        opacity: 0 !important;
+    }
+}

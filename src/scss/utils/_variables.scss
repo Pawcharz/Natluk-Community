@@ -1,0 +1,57 @@
+/** *********** GRID *********** **/
+
+$breakpoints: (
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1300px,
+    xxl: 1600px,
+);
+
+/** *********** TYPOGRAPHY *********** **/
+
+// font types
+$font-headings: 'Be Vietnam Pro', sans-serif;
+$font-default:  'Lato', sans-serif;
+
+/** *********** COLORS *********** **/
+
+// Basic
+$white: #fff;
+$black: #000;
+$black-90: #101010;
+
+// Gray
+$gray-90: #1a1a1a;
+$gray-80: #333333;
+$gray-60: #666666;
+$gray-40: #999999;
+$gray-20: #cccccc;
+$gray-10: #e6e6e6;
+
+// Blue
+
+$blue-90: #0c1927;
+$blue-80: #19324d;
+$blue-60: #336499;
+$blue-40: #6697cc;
+$blue-20: #b3cce6;
+$blue-10: #d9e5f2;
+
+
+// Iconic
+$yellow-python: #f7cb45;
+$green-webDev: hsl(87, 70%, 20%);
+$blue-bi: #336499;
+
+/** *********** SIZES *********** **/
+
+// Margins
+
+// Paddings
+$padding-sides-min: 3%;
+
+// Borders
+
+$border-section: 2px solid rgba($gray-20, 0.9);
+$border-form: 2px solid rgba($black, 0.9);

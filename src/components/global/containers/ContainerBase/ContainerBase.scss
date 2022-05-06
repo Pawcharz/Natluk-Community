@@ -1,0 +1,12 @@
+.container {
+    height: fit-content;
+    width: fit-content;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    &--horizontal { 
+        flex-direction: row;
+    }
+}

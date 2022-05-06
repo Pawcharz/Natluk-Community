@@ -1,0 +1,45 @@
+@use "src/scss/config" as *;
+
+$nowrap-limit: map-get($breakpoints, 'lg');
+.header-home {
+
+    background-color: $black-90;
+    .section__main{
+        flex-wrap: nowrap;
+    }
+
+    &__left {
+        width: max-content;
+        gap: 5rem;
+
+        h1 {
+            align-self: baseline;
+            text-align: left;
+        }
+    }
+    &__right {
+        width: min(50%, 55rem);
+    }
+    @media (max-width: $nowrap-limit) {
+        
+        .section__main{
+            flex-wrap: wrap-reverse;
+            gap: 8rem;
+        }
+        &__left {
+            width: max-content;
+            gap: 6rem;
+            align-items: center;
+            text-align: center;       
+            h1 {
+                align-self: center;
+                text-align: center;
+            }     
+        }
+        &__right {
+            width: min(100%, 65rem);
+        }
+    }
+}
+
+

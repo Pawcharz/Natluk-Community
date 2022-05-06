@@ -1,0 +1,5 @@
+@mixin high-contrast {
+    .high-contrast & {
+        @content;
+    }
+}

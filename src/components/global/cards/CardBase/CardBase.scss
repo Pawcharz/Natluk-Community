@@ -1,0 +1,12 @@
+@use "src/scss/config" as *;
+
+.card {
+    height: fit-content;
+    width: fit-content;
+
+    background-color: $gray-80;
+    border: $border-section;
+
+    display: flex;
+    flex-direction: column;
+}

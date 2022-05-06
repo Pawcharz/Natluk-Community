@@ -1,0 +1,17 @@
+@use "src/scss/config" as *;
+
+.checkbox-container {
+    
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    &__input {
+        height: 1.8rem;
+        width: 1.8rem;
+
+    }
+    &__name {
+
+    }
+}

@@ -1,0 +1,21 @@
+@use "src/scss/config" as *;
+
+.section-newsletter {
+
+    .section__main {
+        flex-wrap: wrap;
+    }
+    
+    &__text-container {
+        max-width: min(100%, 55rem);
+        width: max(50%, 55rem);
+    }
+    &__title {
+        margin-bottom: 2rem;
+    }
+
+    &__form {
+        max-width: min(100%, 55rem);
+        width: max(50%, 55rem);
+    }
+}

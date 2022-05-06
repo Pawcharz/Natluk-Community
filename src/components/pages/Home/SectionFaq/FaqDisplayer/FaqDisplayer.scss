@@ -1,0 +1,38 @@
+@use "src/scss/config" as *;
+
+.faq-displayer {
+    height: 60vh;
+    width: 60vh;
+    padding: 2rem 3rem;
+    padding-right: 0.5rem;
+
+    border-top: $border-section;
+    border-right: $border-section;
+    border-radius: 0.25em;
+
+    &__main {
+        height: 100%;
+        width: 100%;
+        padding-right: 2.5rem;
+
+        flex-direction: column;
+
+        transition: all 0.1s ease-in-out;
+        opacity: 1;
+
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+            width: 0.4em;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: $gray-10;
+            border-radius: 1rem;
+        }
+    }
+
+    &.hidden {
+        .faq-displayer__main {
+            opacity: 0;
+        }
+    }
+}

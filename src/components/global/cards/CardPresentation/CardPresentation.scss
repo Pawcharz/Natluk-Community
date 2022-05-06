@@ -1,0 +1,71 @@
+@use "src/scss/config" as *;
+
+.card-presentation {
+    height: 100%;
+    width: 100%;
+
+    align-items: center;
+
+    &__top {
+        width: 100%;
+        padding: 3em 3.5em;
+
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        .icon {
+            height: 5rem;
+            max-width: 7rem;
+            object-fit: contain;
+        }
+        .title {
+            text-align: center;
+            font-weight: 800;
+            margin: auto;
+        }
+    }
+    &__description {
+        width: 100%;
+        padding: 4.5em 3.5em;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .read-more {
+        margin-bottom: auto;
+        padding: 0;
+        margin: 2rem 0 4em 0;
+
+        font-size: 1.3em;
+    }
+
+    &--dataScience {
+        .card-presentation__top {
+            background-color: $blue-90;
+        }
+    }
+    &--blockchain {
+        .card-presentation__top {
+            background-color: $black-90;
+        }
+    }
+    &--python {
+        .card-presentation__top {
+            background-color: $yellow-python;
+        }
+    }
+    &--webDev {
+        .card-presentation__top {
+            background-color: $green-webDev;
+        }
+    }
+    &--businessIntelligence {
+        .card-presentation__top {
+            background-color: $blue-bi;
+        }
+    }
+
+    
+}

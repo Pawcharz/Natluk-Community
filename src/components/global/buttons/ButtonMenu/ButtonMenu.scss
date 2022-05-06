@@ -1,0 +1,16 @@
+@use "src/scss/config" as *;
+
+.button-menu {
+    height: fit-content;
+    width: fit-content;
+    padding: 1.6em;
+    background-color: $blue-40;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__icon {
+        font-size: 2rem;
+    }
+}

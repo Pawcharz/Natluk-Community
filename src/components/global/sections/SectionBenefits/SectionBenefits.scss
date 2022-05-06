@@ -1,0 +1,47 @@
+@use "src/scss/config" as *;
+
+
+$layoutChange-breakpoint: map-get($breakpoints, 'xl');
+.section-benefits {    
+    
+    .section__main {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: baseline;
+
+        gap: 8rem;
+    }
+
+    .title {
+
+    }
+
+    &__cards {
+        width: 100%;
+        align-self: center;
+        // display: grid;
+        // grid-template-columns: 1fr 1fr;
+        // grid-gap: 6em 4em;
+        // justify-items: center;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6em 4em;
+
+        .card-benefits {
+            // height: 100%;
+        }
+
+        @media (max-width: $layoutChange-breakpoint) {
+        
+            
+            justify-content: center;
+            // grid-template-columns: 1fr;
+            // grid-gap: 3rem;
+            .card-benefits {
+            }
+        }
+    }
+}
+    

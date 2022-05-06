@@ -1,0 +1,20 @@
+@use "src/scss/config" as *;
+
+$width-max: map-get($breakpoints, 'xl');
+.footer {
+    padding: 2rem $padding-sides-min;
+    .section__main {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__buttons {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 3.5rem;
+
+        .button {
+            padding: 0;
+        }
+    }
+}

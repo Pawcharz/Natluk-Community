@@ -1,0 +1,83 @@
+@use "src/scss/config" as *;
+
+.button {
+    height: fit-content;
+    width: fit-content;
+    padding: 1.2em 1.6em;
+    
+    position: relative;
+    text-align: center;
+
+    transition: all .2s ease-in-out;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    
+    &__text {
+        text-align: center;
+        // font-family: $font-headings;
+    }
+    &__arrow {
+        font-size: 2rem;
+    }
+}
+.button--text-dark {
+    .button__text {
+        color: $black;
+    }
+}
+.button--text-light {
+    .button__text {
+        color: $white;
+    }
+}
+
+.button--round {
+    padding: 1em 2.8em;
+    border-radius: 10rem;
+}
+.button--square {
+    border-radius: 0.1em;
+}
+
+.button--dark {
+    background-color: $blue-80;
+
+    &:hover {
+        background-color: $blue-60;
+    }
+}
+.button--light {
+    background-color: $blue-20;
+    &:hover {
+        background-color: $blue-40;
+    }
+}
+
+.button--border-large {
+    border: $border-section;
+}
+
+.button--hover-shadow {
+    
+    &:hover {
+        filter: drop-shadow(0 0 0.5rem rgba($gray-10, 0.8));
+    }
+}
+
+.button--underline {
+
+    &::before {
+        content: '';
+        height: 2px;
+        width: 110%;
+
+        position: absolute;
+        bottom: 0;            
+
+        background-color: $white;
+        border-radius: 1rem;
+    }
+}

@@ -1,0 +1,35 @@
+@use "src/scss/config" as *;
+
+$nowrap-limit: map-get($breakpoints, 'lg');
+.section-inside {
+    .section__main {
+        flex-wrap: wrap;
+    }
+
+    &__text {
+        max-width: min(100%, 60rem);
+        width: max(50%, 60rem);
+        gap: 3rem;
+    }
+    &__title {
+        margin-bottom: 3rem;
+    }
+    &__image {
+        height: auto;
+        max-height: 65vh;
+        max-width: min(100%, 60rem);
+        width: max(50%, 60rem);
+
+        object-fit: contain;
+    }
+}
+@media (max-width: $nowrap-limit) {
+    .section-inside {
+        &__text {
+            width: max(80%, min(60rem, 100%) );
+        }
+        &__image {
+            width: max(80%, min(60rem, 100%) );
+        }
+    }
+}

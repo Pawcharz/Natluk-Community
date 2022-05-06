@@ -1,0 +1,88 @@
+@use "src/scss/config" as *;
+
+$layout-breakpoint-xl: map-get($breakpoints, 'xl');
+$layout-breakpoint-md: map-get($breakpoints, 'md');
+
+.section-presentation {
+
+    .section__main {
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        gap: 8rem;
+    }
+
+    .title {
+        text-align: center;
+    }
+    &__slider {   
+        border-top: $border-section;
+        border-bottom: $border-section;
+    }
+    &__icons {
+
+        flex-wrap: wrap;
+        justify-content: center;
+        .button-icon {
+
+            &#dataScience {
+                background-color: $blue-90;
+                
+                &:hover {
+                    box-shadow: 0 0 1.25rem 0.25rem $blue-80;
+                }
+            }
+            &#blockchain {
+                background-color: $black-90;
+                
+                &:hover {
+                    box-shadow: 0 0 1.25rem 0.25rem $gray-60;
+                }
+            }
+            &#python {
+                background-color: $yellow-python;
+
+                &:hover {
+                    box-shadow: 0 0 1.25rem 0.25rem rgba($yellow-python, 0.5);
+                }
+            }
+            &#webDev {
+                background-color: $green-webDev;
+                
+                &:hover {
+                    box-shadow: 0 0 1.25rem 0.25rem $green-webDev;
+                }
+            }
+            &#businessIntelligence {
+                background-color: $blue-bi;
+                
+                &:hover {
+                    box-shadow: 0 0 1.25rem 0.25rem $blue-bi;
+                }
+            }
+        }
+    }
+    @media (max-width: $layout-breakpoint-xl) {
+        .section__main {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, max-content);
+        }
+    }
+    @media (max-width: $layout-breakpoint-md) {
+
+        padding-bottom: 4rem;
+
+        .section__main {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(6, max-content);
+        }
+        &__icons {
+            margin-top: -4rem;
+        }
+        &__text-container {    
+            .arrow {
+                display: none;
+            }
+        }
+    }
+}
