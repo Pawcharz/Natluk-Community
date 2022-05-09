@@ -3,8 +3,8 @@
 ## Features
 - Specific Communities and Offer Presentation
 - Short predefined FAQ
-- Payment System(Not Implemented yet)
-- Newsletter System(Not Implemented yet)
+- Payment System(Not Fully Implemented yet)
+- Newsletter System(Not Fully Implemented yet)
 
 
 ## Technology used?
