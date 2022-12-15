@@ -18,4 +18,4 @@
 - use "git install" to install all dependencies
 - to run project type "npm run dev"
 
-## [Live demo](https://natluk-community-pawel030724-gmailcom.vercel.app/)
+#### [Live demo](https://natluk-community-pawel030724-gmailcom.vercel.app/)
