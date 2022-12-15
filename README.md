@@ -18,5 +18,4 @@
 - use "git install" to install all dependencies
 - to run project type "npm run dev"
 
-## Link
-[Natluk.xyz](https://www.natluk.xyz/)
+## [Live demo](https://natluk-community-pawel030724-gmailcom.vercel.app/)
